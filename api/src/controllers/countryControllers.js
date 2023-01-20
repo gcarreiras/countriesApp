@@ -8,7 +8,7 @@ const getCountry = async (req , res) =>{
     //sino entro al try.... lo pido a la api, hago un map para guardar los datos que me sirven......
     //eso  lo guardo en la base de datos despues y lo devuelvo derecho en la variable que cree.-(asi no llamo al findall sin necesidad)
     
-    
+    console.log('llegue al get')
     const database = await Country.findAll()
     
     if (database.length > 0){
